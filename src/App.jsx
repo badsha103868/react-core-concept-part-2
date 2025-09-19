@@ -7,6 +7,7 @@ import Posts from './posts';
 import { Suspense } from 'react';
 import Friends from './friends';
 import Friend from './friend';
+import Players from './players'
 
 // fetch data 
 const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
@@ -57,6 +58,8 @@ function App() {
   return (
     <>
       <h3>Vite + React</h3>
+      {/* players jsx file */}
+     <Players></Players>
 
       {/* post suspense */}
       <Suspense  fallback= {<h3>Posts are Loading...</h3>}>
